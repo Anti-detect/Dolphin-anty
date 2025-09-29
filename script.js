@@ -15,11 +15,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
     });
   }
 
-  // Set affiliate CTA link
-  const cta = document.getElementById('affiliateCta');
-  if(cta){
-    cta.href = AFFILIATE_LINK;
-    cta.setAttribute('target','_blank');
-    cta.setAttribute('rel','noopener noreferrer');
-  }
+  // Bind affiliate link to any CTA marked with data-affiliate="true" or id starting with 'affiliate'
+  const ctas = Array.from(document.querySelectorAll('[data-affiliate="true"], a[id^="affiliate"]'));
+  ctas.forEach(el => {
+    try{
+      el.href = AFFILIATE_LINK;
+      el.setAttribute('target','_blank');
+      el.setAttribute('rel','noopener noreferrer');
+    }catch(e){
+      // ignore non-anchor elements
+    }
+  });
 });

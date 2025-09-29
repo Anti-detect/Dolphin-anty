@@ -1,5 +1,5 @@
 <!--
-Copilot prompt: "Translate the homepage into English and adapt navigation links to the /en/ path. Keep structure, CTA affiliate placeholder and comparison table."
+Copilot prompt: "Create a polished English homepage for an antidetect browser review site. Include hero, comparison table (Multilogin, GoLogin, Dolphin{anty}, Dolphin-anty), highlight Multilogin as recommended, and add affiliate CTA placeholder."
 -->
 
 <!DOCTYPE html>
@@ -7,10 +7,110 @@ Copilot prompt: "Translate the homepage into English and adapt navigation links 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolphin-anty: Reviews & Comparisons</title>
+    <title>Dolphin-anty: Reviews & Comparisons of Antidetect Browsers 2025</title>
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <!-- ...existing code... -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>Dolphin-anty</h1>
+                <p class="tagline">Independent reviews to help you choose the best antidetect browser</p>
+            </div>
+            <nav class="main-nav">
+                <a href="/en/">Home</a>
+                <a href="/en/multilogin-review.html">Multilogin Review</a>
+                <a href="#comparison">Comparison</a>
+                <div class="lang-dropdown">
+                    <button id="langBtn">Language ▾</button>
+                    <ul id="langMenu" class="lang-menu">
+                        <li><a href="/vi/">Tiếng Việt</a></li>
+                        <li><a href="/en/">English</a></li>
+                        <li><a href="/zh/">中文</a></li>
+                        <li><a href="/ru/">Русский</a></li>
+                        <li><a href="/pt/">Português</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Dolphin-anty: Reviews & Comparisons of the Best Antidetect Browsers 2025</h2>
+            <p>We provide unbiased, practical reviews so you can pick the right tool for managing browser profiles and fingerprints. Featured: <a href="/en/multilogin-review.html">Multilogin review</a>.</p>
+            <div class="cta-row">
+                <a class="cta-btn primary" data-affiliate="true" href="#">Get 50% Off Multilogin</a>
+                <a class="cta-btn" href="/en/multilogin-review.html">Read Full Multilogin Review</a>
+            </div>
+        </section>
+
+        <section id="comparison" class="comparison">
+            <h3>Quick Comparison</h3>
+            <div class="table-wrap">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Criteria</th>
+                            <th class="highlight">Multilogin<br><span class="badge">Recommended</span></th>
+                            <th>GoLogin</th>
+                            <th>Dolphin{anty}</th>
+                            <th>Dolphin-anty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pricing</td>
+                            <td class="highlight">From $XX/month</td>
+                            <td>From $YY/month</td>
+                            <td>Free / Freemium</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Profiles</td>
+                            <td class="highlight">100+ profiles</td>
+                            <td>50+ profiles</td>
+                            <td>10 free profiles</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Fingerprint Management</td>
+                            <td class="highlight">Extensive & flexible</td>
+                            <td>Decent</td>
+                            <td>Limited</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Ease of Use</td>
+                            <td class="highlight">Professional, intuitive</td>
+                            <td>Easy</td>
+                            <td>Average</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Support & Docs</td>
+                            <td class="highlight">Strong, active community</td>
+                            <td>Good</td>
+                            <td>Weak</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h3>Reviews</h3>
+            <ul>
+                <li><a href="/en/multilogin-review.html">Multilogin — In-depth review (English)</a></li>
+            </ul>
+        </section>
+
+        <footer class="site-footer">
+            <p>© 2025 Dolphin-anty — Independent reviews of antidetect browsers.</p>
+        </footer>
+    </main>
+
+    <script src="/script.js"></script>
 </body>
 </html>
