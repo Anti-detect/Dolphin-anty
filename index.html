@@ -1,30 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolphin-anty - Antidetect Browser</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #e9ecef; text-align: center; }
-        header { background-color: #17a2b8; color: white; padding: 20px; }
-        .content { max-width: 600px; margin: 25px auto; }
-        button { background-color: #fd7e14; color: white; padding: 12px 20px; border: none; cursor: pointer; }
-        button:hover { background-color: #e06b12; }
-    </style>
+    <title>Dolphin-anty: Đánh giá & So sánh Trình duyệt Antidetect</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-        <h1>Dolphin-anty</h1>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>Dolphin-anty</h1>
+                <p class="tagline">Đánh giá & So sánh các Trình duyệt Antidetect Tốt nhất 2025</p>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Trang chủ</a>
+                <a href="/multilogin-review.html">Đánh giá Multilogin</a>
+                <a href="#comparison">Bảng so sánh</a>
+                <div class="lang-dropdown">
+                    <button id="langBtn">Ngôn ngữ ▾</button>
+                    <ul id="langMenu" class="lang-menu">
+                        <li><a href="/vi/">Tiếng Việt</a></li>
+                        <li><a href="/en/">English</a></li>
+                        <li><a href="/zh/">中文</a></li>
+                        <li><a href="/ru/">Русский</a></li>
+                        <li><a href="/pt/">Português</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
-    <div class="content">
-        <h2>Robust Browser Anonymity</h2>
-        <p>Dolphin-anty provides 10 free profiles. Scale to 100 profiles for $89/month.</p>
-        <h3>Pricing</h3>
-        <ul>
-            <li>10 Profiles: Free</li>
-            <li>100 Profiles: $89/month</li>
-        </ul>
-        <button onclick="window.location.href='https://dolphin-anty.com'">Try Now</button>
-    </div>
+
+    <main class="container">
+        <!--
+        Bước 1: Cấu trúc HTML cơ bản và thanh điều hướng đa ngôn ngữ
+        Dán prompt Copilot vào đây để tự động mở rộng HTML/translate khi cần.
+
+        Example Copilot prompt (comment):
+        "Generate a professional Vietnamese homepage for an antidetect browser review site. Include a hero section, feature comparison table comparing Multilogin, GoLogin, Dolphin{anty}, and Dolphin-anty. Highlight Multilogin column. Add CTA button with affiliate link placeholder. Make layout responsive."
+        -->
+
+        <section class="hero">
+            <h2>Dolphin-anty: Đánh giá & So sánh các Trình duyệt Antidetect Tốt nhất 2025</h2>
+            <p>Chúng tôi cung cấp những đánh giá khách quan giúp bạn chọn trình duyệt antidetect phù hợp nhất. Bài viết nổi bật: <a href="/multilogin-review.html">Đánh giá Multilogin</a>.</p>
+            <div class="cta-row">
+                <!-- CTA: thay YOUR_AFFILIATE_LINK bằng link affiliate của bạn -->
+                <a class="cta-btn primary" id="affiliateCta" href="#">Nhận Mã Giảm Giá 50% Multilogin</a>
+                <a class="cta-btn" href="/multilogin-review.html">Xem Đánh Giá Chi Tiết Multilogin</a>
+            </div>
+        </section>
+
+        <section id="comparison" class="comparison">
+            <h3>Bảng So Sánh Nhanh</h3>
+            <!--
+            Bước 2: Trong phần <main>, dán prompt Copilot để tạo bảng so sánh chi tiết bằng tiếng Việt.
+
+            Prompt ví dụ (comment):
+            "Create an accessible comparison table in Vietnamese comparing Multilogin, GoLogin, Dolphin{anty}, and Dolphin-anty. Columns: Pricing, Profiles, Browser Engine Support, Fingerprint Management, Ease of Use, Support. Highlight Multilogin with accent color and 'Recommended' badge.'"
+            -->
+
+            <div class="table-wrap">
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Tiêu chí</th>
+                            <th class="highlight">Multilogin<br><span class="badge">Recommended</span></th>
+                            <th>GoLogin</th>
+                            <th>Dolphin{anty}</th>
+                            <th>Dolphin-anty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Giá</td>
+                            <td class="highlight">Từ $XX/tháng</td>
+                            <td>Từ $YY/tháng</td>
+                            <td>Miễn phí / Freemium</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Profiles</td>
+                            <td class="highlight">100+ profiles</td>
+                            <td>50+ profiles</td>
+                            <td>10 profiles miễn phí</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Fingerprint Management</td>
+                            <td class="highlight">Rộng & linh hoạt</td>
+                            <td>Ổn</td>
+                            <td>Hạn chế</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Độ dễ sử dụng</td>
+                            <td class="highlight">Chuyên nghiệp, trực quan</td>
+                            <td>Dễ dùng</td>
+                            <td>Trung bình</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Hỗ trợ & Tài liệu</td>
+                            <td class="highlight">Tốt, cộng đồng lớn</td>
+                            <td>Khá</td>
+                            <td>Yếu</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <h3>Bài Viết Đánh Giá</h3>
+            <ul>
+                <li><a href="/multilogin-review.html">Multilogin — Đánh giá chi tiết (bản tiếng Việt)</a></li>
+                <!-- Future: links to GoLogin, Dolphin{anty}, Dolphin-anty reviews -->
+            </ul>
+        </section>
+
+        <footer class="site-footer">
+            <p>© 2025 Dolphin-anty — Trang đánh giá độc lập về các trình duyệt antidetect.</p>
+            <p><small>Ghi chú: Các liên kết đến Multilogin có thể chứa mã affiliate. Thay YOUR_AFFILIATE_LINK trong <code>script.js</code> hoặc thẻ <code>a#affiliateCta</code>.</small></p>
+        </footer>
+    </main>
+
+    <script src="/script.js"></script>
 </body>
 </html>
